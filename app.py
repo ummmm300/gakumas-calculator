@@ -59,7 +59,7 @@ max_sp = st.slider(
     "SP率サポカの最大枚数",
     min_value=min_sp,
     max_value=6,
-    value=max(2, min_sp)
+    value=min_sp
 )
 
 owned_file = st.file_uploader(
