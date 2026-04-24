@@ -89,4 +89,10 @@ if st.button("計算実行"):
             )
 
             if show_detail:
-                st.caption("※内訳表示は次の工程で接続します")
+                with st.expander(f"{card['name']} の内訳"):
+                    for detail in card["details"]:
+                        st.write(
+                            f"{detail['ability_id']} / "
+                            f"{detail['kind']} / "
+                            f"{detail['score']:.1f}"
+                        )
