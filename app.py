@@ -90,16 +90,3 @@ if st.button("計算実行"):
     except Exception:
         st.error("予期しないエラーが発生しました。CSVの形式や入力内容を確認してください。")
     results = run_calculation(plan, context_name, min_sp, max_sp, owned_file)
-
-    for result in results:
-        st.subheader(f"{result['pattern']}（スコア {result['total_score']:.1f}）")
-        st.write(f"合計スコア: {result['total_score']:.1f}")
-
-        for card in result["team"]:
-            rental_mark = "【レンタル】" if card["is_rental"] else ""
-            st.write(
-                f"{rental_mark}{card['name']} "
-                f"{card['score']:.1f} / "
-                f"{card['type']} / "
-                f"SP率 {card['sp_rate']}"
-            )
