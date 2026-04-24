@@ -187,23 +187,19 @@ def get_limit_break_index(limit_break):
 
 
 def calc_ability_score(kind, value, context, limit_count):
-
     if kind == "sp_rate":
         return 0.0
 
     if kind == "none":
         return 0.0
 
-    # flat（固定値）
     if kind.startswith("flat"):
         return value
 
-    # param bonus
     if kind.startswith("param_bonus"):
         key = KIND_TO_CONTEXT_KEY[kind]
         return context[key] * (value / 100.0)
 
-    # 通常処理
     context_key = KIND_TO_CONTEXT_KEY[kind]
     count = context[context_key]
 
