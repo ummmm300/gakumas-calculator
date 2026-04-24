@@ -309,6 +309,17 @@ def count_sp_cards(team):
         if "sp_rate_id" in card["abilities"]
     )
 
+def get_display_sp_rate(card, ability_db):
+    tier = card["ability_tier"]
+    idx = get_limit_break_index(card["limit_break"])
+
+    for ability_id in card["abilities"]:
+        if ability_id == "sp_rate_id":
+            ability = ability_db[(ability_id, tier)]
+            return ability["values"][idx]
+
+    return 0
+
 def get_display_score(card, own_score_map, rental_score_map):
     return (
         rental_score_map[card["card_id"]]
@@ -860,7 +871,7 @@ def run_calculation(selected_plan, context_name, min_sp, max_sp, owned_file=None
                 "score": score,
                 "type": card["param_type"],
                 "tier": card["ability_tier"],
-                "sp_rate": card["sp_rate"],
+                "sp_rate": get_display_sp_rate(card, ability_db),
                 "is_rental": card.get("is_rental", False),
                 "details": make_card_detail(card, ability_db, context),
             })
