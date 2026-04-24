@@ -2,15 +2,17 @@ import streamlit as st
 
 from calc_cards import run_calculation
 
-st.title("学マス計算機")
+st.title("サポカ計算機")
+
+with open("owned_cards_template.csv", "r", encoding="utf-8-sig") as f:
+    template_data = f.read()
 
 st.download_button(
-    "テンプレートCSVをダウンロード",
-    data="card_id,name,owned,limit_break\n",
+    "csvテンプレートをダウンロード",
+    data=template_data,
     file_name="owned_cards_template.csv",
     mime="text/csv"
 )
-
 # ① プラン選択（先）
 plan_labels = {
     "センス": "sense",
