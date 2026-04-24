@@ -199,8 +199,14 @@ def calc_ability_score(kind, value, context, limit_count):
         return value
 
     if kind.startswith("param_bonus"):
+        if kind not in KIND_TO_CONTEXT_KEY:
+            raise ValueError(f"未登録のkindです: {kind}")
+
         context_key = KIND_TO_CONTEXT_KEY[kind]
         return context[context_key] * (value / 100.0)
+
+    if kind not in KIND_TO_CONTEXT_KEY:
+        raise ValueError(f"未登録のkindです: {kind}")
 
     context_key = KIND_TO_CONTEXT_KEY[kind]
     count = context[context_key]
