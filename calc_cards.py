@@ -188,8 +188,8 @@ def get_limit_break_index(limit_break):
 
 def calc_ability_score(kind, value, context, limit_count):
 
-if kind == "sp_rate":
-    return 0.0
+    if kind == "sp_rate":
+        return 0.0
 
     if kind == "none":
         return 0.0
