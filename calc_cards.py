@@ -187,6 +187,10 @@ def get_limit_break_index(limit_break):
 
 
 def calc_ability_score(kind, value, context, limit_count):
+
+if kind == "sp_rate":
+    return 0.0
+
     if kind == "none":
         return 0.0
 
@@ -295,7 +299,10 @@ def group_cards_by_type(cards):
     }
 
 def count_sp_cards(team):
-    return sum(1 for card in team if card["sp_rate"] > 0)
+    return sum(
+        1 for card in team
+        if "sp_rate_id" in card["abilities"]
+    )
 
 def get_display_score(card, own_score_map, rental_score_map):
     return (
