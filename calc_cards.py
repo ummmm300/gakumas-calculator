@@ -764,6 +764,30 @@ def find_best_team(cards, ability_db, context, limit_break, team_size=6):
 
     return best_team, best_score
 
+def make_card_detail(card, ability_db, context):
+    tier = card["ability_tier"]
+    idx = get_limit_break_index(card["limit_break"])
+
+    details = []
+
+    for ability_id in card["abilities"]:
+        ability = ability_db[(ability_id, tier)]
+        score = calc_ability_score(
+            ability["kind"],
+            ability["values"][idx],
+            context,
+            ability["limit_count"]
+        )
+
+        if ability_id != "none_id":
+            details.append({
+                "ability_id": ability_id,
+                "kind": ability["kind"],
+                "score": score,
+            })
+
+    return details
+
 def run_calculation(selected_plan, context_name, min_sp, max_sp, owned_file=None):
     context = CONTEXTS[context_name].copy()
 
@@ -818,7 +842,8 @@ def run_calculation(selected_plan, context_name, min_sp, max_sp, owned_file=None
                 "type": card["param_type"],
                 "tier": card["ability_tier"],
                 "sp_rate": card["sp_rate"],
-                "is_rental": card.get("is_rental", False)
+                "is_rental": card.get("is_rental", False),
+                "details": make_card_detail(card, ability_db, context),
             })
 
         results.append({
