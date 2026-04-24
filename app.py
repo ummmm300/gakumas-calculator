@@ -60,7 +60,7 @@ st.title("サポカ計算機")
 
 st.caption("v1.0.0｜サポカの画面入力・csv保存・ロジック対応・計算条件表示に対応")
 
-st.markdown("[開発者のXはこちら](https://x.com/wandering_sen)")
+st.markdown("[不具合報告・要望・意見などはこちらへ](https://x.com/wandering_sen)")
 
 with open("owned_cards_template.csv", "r", encoding="utf-8-sig") as f:
     template_data = f.read()
