@@ -70,8 +70,6 @@ owned_file = st.file_uploader(
 if owned_file is None:
     st.warning("所持状況CSVをアップロードしてください")
 
-show_detail = st.checkbox("内訳を表示する")
-
 if st.button("計算実行"):
     results = run_calculation(plan, context_name, min_sp, max_sp, owned_file)
 
@@ -88,11 +86,3 @@ if st.button("計算実行"):
                 f"SP率 {card['sp_rate']}"
             )
 
-            if show_detail:
-                with st.expander(f"{card['name']} の内訳"):
-                    for detail in card["details"]:
-                        st.write(
-                            f"{detail['ability_id']} / "
-                            f"{detail['kind']} / "
-                            f"{detail['score']:.1f}"
-                        )
