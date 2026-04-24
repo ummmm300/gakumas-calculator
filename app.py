@@ -48,6 +48,13 @@ selected_label = st.selectbox(
 
 context_name = context_labels[plan][selected_label]
 
+min_sp = st.slider(
+    "SP率サポカの最低枚数",
+    min_value=0,
+    max_value=6,
+    value=2
+)
+
 if min_sp == 6:
     max_sp = 6
     st.write("SP率サポカの最大枚数: 6")
@@ -60,7 +67,7 @@ else:
     )
 
 owned_file = st.file_uploader(
-    "所持状況CSVをアップロード",
+    "所持状況csvをアップロード",
     type=["csv"]
 )
 
