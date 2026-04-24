@@ -44,6 +44,7 @@ KIND_TO_CONTEXT_KEY = {
     "on_delete_M": "delete_m_count",
     "on_delete": "delete_count",
     "on_convert": "convert_count",
+    "get_card": "get_card_count",
     "get_active": "get_active_count",
     "get_mental": "get_mental_count",
     "get_buff": "get_buff_count",
@@ -421,6 +422,7 @@ CONTEXTS = {
         "delete_count": 1.0,
         "convert_count": 1.0,
 
+        "get_card_count": 21.0,
         "get_active_count": 11.0,
         "get_mental_count": 11.0,
         "get_buff_count": 9.0,
@@ -471,6 +473,7 @@ CONTEXTS = {
         "delete_count": 1.0,
         "convert_count": 1.0,
 
+        "get_card_count": 21.0,
         "get_active_count": 11.0,
         "get_mental_count": 11.0,
         "get_buff_count": 9.0,
@@ -521,6 +524,7 @@ CONTEXTS = {
         "delete_count": 1.0,
         "convert_count": 1.0,
 
+        "get_card_count": 21.0,
         "get_active_count": 11.0,
         "get_mental_count": 11.0,
         "get_buff_count": 9.0,
@@ -571,6 +575,7 @@ CONTEXTS = {
         "delete_count": 2.0,
         "convert_count": 2.0,
 
+        "get_card_count": 21.0,
         "get_active_count": 8.0,
         "get_mental_count": 13.0,
         "get_buff_count": 0.0,
@@ -621,6 +626,7 @@ CONTEXTS = {
         "delete_count": 2.0,
         "convert_count": 2.0,
 
+        "get_card_count": 21.0,
         "get_active_count": 8.0,
         "get_mental_count": 13.0,
         "get_buff_count": 0.0,
@@ -671,6 +677,7 @@ CONTEXTS = {
         "delete_count": 2.0,
         "convert_count": 2.0,
 
+        "get_card_count": 21.0,
         "get_active_count": 8.0,
         "get_mental_count": 13.0,
         "get_buff_count": 0.0,
@@ -721,6 +728,7 @@ CONTEXTS = {
         "delete_count": 2.0,
         "convert_count": 2.0,
 
+        "get_card_count": 21.0,
         "get_active_count": 8.0,
         "get_mental_count": 13.0,
         "get_buff_count": 0.0,
