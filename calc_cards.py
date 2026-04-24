@@ -6,6 +6,30 @@ SUPPORT_CARD_DB_FILE = "support_card_db.csv"
 OWNED_CARDS_FILE = "owned_cards.csv"
 
 
+def calc_ability_score(kind, value, context, limit_count):
+    kind = kind.strip()
+
+    if kind == "sp_rate":
+        return 0.0
+
+    if kind == "none":
+        return 0.0
+
+    if kind.startswith("flat"):
+        return value
+
+    if kind.startswith("param_bonus"):
+        context_key = KIND_TO_CONTEXT_KEY[kind]
+        return context[context_key] * (value / 100.0)
+
+    context_key = KIND_TO_CONTEXT_KEY[kind]
+    count = context[context_key]
+
+    if limit_count >= 0:
+        count = min(count, limit_count)
+
+    return value * count
+
 # kind → contextキー
 KIND_TO_CONTEXT_KEY = {
     # SP
@@ -185,28 +209,6 @@ def make_rental_cards(cards):
 def get_limit_break_index(limit_break):
     return max(0, min(4, limit_break))
 
-
-def calc_ability_score(kind, value, context, limit_count):
-    if kind == "sp_rate":
-        return 0.0
-
-    if kind == "none":
-        return 0.0
-
-    if kind.startswith("flat"):
-        return value
-
-    if kind.startswith("param_bonus"):
-        key = KIND_TO_CONTEXT_KEY[kind]
-        return context[key] * (value / 100.0)
-
-    context_key = KIND_TO_CONTEXT_KEY[kind]
-    count = context[context_key]
-
-    if limit_count >= 0:
-        count = min(count, limit_count)
-
-    return value * count
 
 
 def calc_card_score(card, ability_db, context, limit_break=0):
