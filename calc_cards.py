@@ -564,8 +564,110 @@ CONTEXTS = {
         "param_event_ssr_count": 1.0,
     },
 
-#やる気VoDa
+#やる元VoDa
     "motivation_voda": {
+        "param_vo_total": 955.0,
+        "param_da_total": 955.0,
+        "param_vi_total": 390.0,
+
+        "sp_vo_count": 2.5,
+        "sp_da_count": 2.5,
+        "sp_vi_count": 0.0,
+
+        "lesson_count": 2.5,
+        "normal_lesson_count": 0.0,
+
+        "enhance_count": 9.0,
+        "enhance_a_count": 7.0,
+        "enhance_m_count": 2.0,
+
+        "delete_a_count": 1.0,
+        "delete_m_count": 1.0,
+        "delete_count": 1.0,
+        "convert_count": 1.0,
+
+        "get_card_count": 21.0,
+        "get_active_count": 6.0,
+        "get_mental_count": 15.0,
+        "get_buff_count": 0.0,
+        "get_focus_count": 0.0,
+        "get_energy_count": 11.0,
+        "get_motivation_count": 10.0,
+        "get_impression_count": 5.0,
+        "get_reserve_count": 0.0,
+        "get_all_out_count": 0.0,
+        "get_ssr_count": 8.0,
+
+        "class_count": 4.0,
+        "supply_count": 4.0,
+        "consult_count": 2.0,
+        "outing_count": 0.0,
+        "rest_count": 0.0,
+        "exam_end_count": 2.0,
+        "special_training_count": 1.0,
+
+        "get_drink_count": 21.0,
+        "drink_exchange_count": 12.0,
+
+        "customize_count": 5.0,
+        "get_item_count": 5.0,
+        "param_event_count": 1.0,
+        "param_event_ssr_count": 1.0,
+    },
+
+#やる元DaVi
+    "motivation_davi": {
+        "param_vo_total": 390.0,
+        "param_da_total": 955.0,
+        "param_vi_total": 955.0,
+
+        "sp_vo_count": 0.0,
+        "sp_da_count": 2.5,
+        "sp_vi_count": 2.5,
+
+        "lesson_count": 2.5,
+        "normal_lesson_count": 0.0,
+
+        "enhance_count": 9.0,
+        "enhance_a_count": 7.0,
+        "enhance_m_count": 2.0,
+
+        "delete_a_count": 1.0,
+        "delete_m_count": 1.0,
+        "delete_count": 1.0,
+        "convert_count": 1.0,
+
+        "get_card_count": 21.0,
+        "get_active_count": 6.0,
+        "get_mental_count": 15.0,
+        "get_buff_count": 0.0,
+        "get_focus_count": 0.0,
+        "get_energy_count": 11.0,
+        "get_motivation_count": 10.0,
+        "get_impression_count": 5.0,
+        "get_reserve_count": 0.0,
+        "get_all_out_count": 0.0,
+        "get_ssr_count": 8.0,
+
+        "class_count": 4.0,
+        "supply_count": 4.0,
+        "consult_count": 2.0,
+        "outing_count": 0.0,
+        "rest_count": 0.0,
+        "exam_end_count": 2.0,
+        "special_training_count": 1.0,
+
+        "get_drink_count": 21.0,
+        "drink_exchange_count": 12.0,
+
+        "customize_count": 5.0,
+        "get_item_count": 5.0,
+        "param_event_count": 1.0,
+        "param_event_ssr_count": 1.0,
+    },
+
+#やる気VoVi
+    "motivation_vovi": {
         "param_vo_total": 955.0,
         "param_da_total": 390.0,
         "param_vi_total": 955.0,
@@ -577,23 +679,176 @@ CONTEXTS = {
         "lesson_count": 2.5,
         "normal_lesson_count": 0.0,
 
-        "enhance_count": 1.0,
-        "enhance_a_count": 0.0,
-        "enhance_m_count": 0.0,
+        "enhance_count": 9.0,
+        "enhance_a_count": 7.0,
+        "enhance_m_count": 2.0,
 
-        "delete_a_count": 2.0,
-        "delete_m_count": 2.0,
-        "delete_count": 2.0,
-        "convert_count": 2.0,
+        "delete_a_count": 1.0,
+        "delete_m_count": 1.0,
+        "delete_count": 1.0,
+        "convert_count": 1.0,
 
         "get_card_count": 21.0,
-        "get_active_count": 8.0,
-        "get_mental_count": 13.0,
+        "get_active_count": 6.0,
+        "get_mental_count": 15.0,
         "get_buff_count": 0.0,
         "get_focus_count": 0.0,
-        "get_energy_count": 0.0,
-        "get_motivation_count": 0.0,
-        "get_impression_count": 0.0,
+        "get_energy_count": 11.0,
+        "get_motivation_count": 10.0,
+        "get_impression_count": 5.0,
+        "get_reserve_count": 0.0,
+        "get_all_out_count": 0.0,
+        "get_ssr_count": 8.0,
+
+        "class_count": 4.0,
+        "supply_count": 4.0,
+        "consult_count": 2.0,
+        "outing_count": 0.0,
+        "rest_count": 0.0,
+        "exam_end_count": 2.0,
+        "special_training_count": 1.0,
+
+        "get_drink_count": 21.0,
+        "drink_exchange_count": 12.0,
+
+        "customize_count": 5.0,
+        "get_item_count": 5.0,
+        "param_event_count": 1.0,
+        "param_event_ssr_count": 1.0,
+    },
+
+#好印象Voda
+    "impression_voda": {
+        "param_vo_total": 955.0,
+        "param_da_total": 955.0,
+        "param_vi_total": 390.0,
+
+        "sp_vo_count": 2.5,
+        "sp_da_count": 2.5,
+        "sp_vi_count": 0.0,
+
+        "lesson_count": 2.5,
+        "normal_lesson_count": 0.0,
+
+        "enhance_count": 9.0,
+        "enhance_a_count": 7.0,
+        "enhance_m_count": 2.0,
+
+        "delete_a_count": 1.0,
+        "delete_m_count": 1.0,
+        "delete_count": 1.0,
+        "convert_count": 1.0,
+
+        "get_card_count": 21.0,
+        "get_active_count": 6.0,
+        "get_mental_count": 15.0,
+        "get_buff_count": 0.0,
+        "get_focus_count": 0.0,
+        "get_energy_count": 1.0,
+        "get_motivation_count": 5.0,
+        "get_impression_count": 13.0,
+        "get_reserve_count": 10.0,
+        "get_all_out_count": 1.0,
+        "get_ssr_count": 8.0,
+
+        "class_count": 4.0,
+        "supply_count": 4.0,
+        "consult_count": 2.0,
+        "outing_count": 0.0,
+        "rest_count": 0.0,
+        "exam_end_count": 2.0,
+        "special_training_count": 1.0,
+
+        "get_drink_count": 21.0,
+        "drink_exchange_count": 12.0,
+
+        "customize_count": 5.0,
+        "get_item_count": 5.0,
+        "param_event_count": 1.0,
+        "param_event_ssr_count": 1.0,
+    },
+
+#好印象DaVi
+    "impression_davi": {
+        "param_vo_total": 390.0,
+        "param_da_total": 955.0,
+        "param_vi_total": 955.0,
+
+        "sp_vo_count": 0.0,
+        "sp_da_count": 2.5,
+        "sp_vi_count": 2.5,
+
+        "lesson_count": 2.5,
+        "normal_lesson_count": 0.0,
+
+        "enhance_count": 9.0,
+        "enhance_a_count": 7.0,
+        "enhance_m_count": 2.0,
+
+        "delete_a_count": 1.0,
+        "delete_m_count": 1.0,
+        "delete_count": 1.0,
+        "convert_count": 1.0,
+
+        "get_card_count": 21.0,
+        "get_active_count": 6.0,
+        "get_mental_count": 15.0,
+        "get_buff_count": 0.0,
+        "get_focus_count": 0.0,
+        "get_energy_count": 1.0,
+        "get_motivation_count": 5.0,
+        "get_impression_count": 13.0,
+        "get_reserve_count": 10.0,
+        "get_all_out_count": 1.0,
+        "get_ssr_count": 8.0,
+
+        "class_count": 4.0,
+        "supply_count": 4.0,
+        "consult_count": 2.0,
+        "outing_count": 0.0,
+        "rest_count": 0.0,
+        "exam_end_count": 2.0,
+        "special_training_count": 1.0,
+
+        "get_drink_count": 21.0,
+        "drink_exchange_count": 12.0,
+
+        "customize_count": 5.0,
+        "get_item_count": 5.0,
+        "param_event_count": 1.0,
+        "param_event_ssr_count": 1.0,
+    },
+
+#好印象VoVi
+    "impression_vovi": {
+        "param_vo_total": 955.0,
+        "param_da_total": 390.0,
+        "param_vi_total": 955.0,
+
+        "sp_vo_count": 2.5,
+        "sp_da_count": 0.0,
+        "sp_vi_count": 2.5,
+
+        "lesson_count": 2.5,
+        "normal_lesson_count": 0.0,
+
+        "enhance_count": 9.0,
+        "enhance_a_count": 7.0,
+        "enhance_m_count": 2.0,
+
+        "delete_a_count": 1.0,
+        "delete_m_count": 1.0,
+        "delete_count": 1.0,
+        "convert_count": 1.0,
+
+        "get_card_count": 21.0,
+        "get_active_count": 6.0,
+        "get_mental_count": 15.0,
+        "get_buff_count": 0.0,
+        "get_focus_count": 0.0,
+        "get_energy_count": 1.0,
+        "get_motivation_count": 5.0,
+        "get_impression_count": 13.0,
         "get_reserve_count": 10.0,
         "get_all_out_count": 1.0,
         "get_ssr_count": 8.0,
@@ -829,9 +1084,23 @@ def run_calculation(selected_plan, context_name, min_sp, max_sp, owned_file=None
 
     ability_db = load_ability_db(ABILITY_DB_FILE)
     cards = load_support_cards(SUPPORT_CARD_DB_FILE)
-    owned_db = load_owned_cards(owned_file if owned_file is not None else OWNED_CARDS_FILE)
 
-    cards = [card for card in cards if card[selected_plan] == 1]
+    if isinstance(owned_file, dict):
+        owned_db = {
+            card_id: get_limit_break_index(limit_break)
+            for card_id, limit_break in owned_file.items()
+        }
+
+    elif owned_file == "ALL":
+        owned_db = {card["card_id"]: 4 for card in cards}
+
+    else:
+        owned_db = load_owned_cards(
+            owned_file if owned_file is not None else OWNED_CARDS_FILE
+        )
+
+    filter_plan = "logic" if selected_plan in ["motivation", "impression"] else selected_plan
+    cards = [card for card in cards if card[filter_plan] == 1]
 
     own_cards = make_owned_cards(cards, owned_db)
     rental_cards = make_rental_cards(cards)
