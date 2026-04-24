@@ -55,16 +55,7 @@ min_sp = st.slider(
     value=2
 )
 
-if min_sp == 6:
-    max_sp = 6
-    st.write("SP率サポカの最大枚数: 6")
-else:
-    max_sp = st.slider(
-        "SP率サポカの最大枚数",
-        min_value=min_sp,
-        max_value=6,
-        value=min_sp
-    )
+max_sp = 6
 
 owned_file = st.file_uploader(
     "所持状況csvをアップロード",
@@ -112,4 +103,3 @@ if st.button("計算実行"):
                 f"{card['type']} / "
                 f"SP率 {card['sp_rate']}"
             )
-
