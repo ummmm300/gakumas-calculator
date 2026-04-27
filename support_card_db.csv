@@ -52,7 +52,7 @@ card_050,絶対にお渡ししますわっ！,SSR,SSR,28,Vo,0,1,0,flat_vo_id,sp_
 card_051,バレンタイン♡会議中ーっ！,SSR,SSR,0,Vi,0,0,1,param_bonus_vi_id,on_delete_id,on_enhance_A_id,on_sp_vi_id,on_param_event_id,none_id,,1,
 card_052,はいっ、みんなも一緒に♪,SSR,SSR,28,Vo,0,0,1,param_bonus_vo_id,sp_rate_id,none_id,on_outing_id,on_param_event_id,none_id,,1,
 card_053,これが私達の、3年間,SSR,SSR,0,Da,0,1,1,param_bonus_da_id,none_id,on_sp_da_id,on_class_id,on_param_event_id,none_id,,1,SP
-card_054,もう一度、最初から！,SSR,SSR,28,Vo,1,1,1,param_bonus_vo_id,sp_rate_id,on_sp_vo_id,on_class_id,on_param_event_id,none_id,1,1,
+card_054,もう一度、最初から！,SSR,SSR,28,Vo,1,0,0,param_bonus_vo_id,sp_rate_id,on_sp_vo_id,on_class_id,on_param_event_id,none_id,1,1,
 card_055,待ちなさーい！,SSR,SSR,28,Da,0,0,1,flat_da_id,sp_rate_id,on_sp_da_id,get_active_id,on_param_event_id,none_id,,1,SP
 card_056,あったかいね,SSR,SSR,28,Vi,0,1,0,flat_vi_id,sp_rate_id,get_mental_id,on_consult_id,on_param_event_id,none_id,,1,SP
 card_057,キラキラして綺麗～っ！,SSR,SSR,0,Da,1,0,0,param_bonus_da_id,on_consult_id,on_sp_da_id,on_exam_end_id,on_param_event_id,none_id,,1,
