@@ -58,10 +58,13 @@ CONTEXT_LABELS_JP = {
 
 st.title("サポカ計算機")
 
+st.warning("【重要】Web版を公開しました！今後はこちらの利用を推奨します👇")
+
+st.markdown("👉 [サポカ計算機 Web版はこちら](https://support-card-web.vercel.app/)")
+
 st.caption("v1.0.0｜サポカの画面入力・csv保存・ロジック対応・計算条件表示に対応")
 
 st.markdown("[使い方はこちら](https://x.com/wandering_sen/status/2047936136153370971?s=20)")
-
 st.markdown("[不具合報告・要望・意見などはこちらのDMまで](https://x.com/wandering_sen)")
 
 with open("owned_cards_template.csv", "r", encoding="utf-8-sig") as f:
