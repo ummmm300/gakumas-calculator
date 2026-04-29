@@ -58,7 +58,7 @@ CONTEXT_LABELS_JP = {
 
 st.title("サポカ計算機")
 
-st.warning("【重要】Web版を公開しました！今後はこちらの利用を推奨します👇")
+st.warning("【重要】Web版公開！今後はこちらをご利用ください👇")
 
 st.markdown("👉 [サポカ計算機 Web版はこちら](https://support-card-web.vercel.app/)")
 
